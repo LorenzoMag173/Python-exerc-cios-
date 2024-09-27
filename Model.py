@@ -86,8 +86,38 @@ class Model:
 
 
     def exercicioTreze(self,num):
+        fib1 = 0
+        fib2 = 1
+        fib3 = 0
+        resultado = f'0\n1\n'
+        for fib3 in range(1, 9, 1):
+            fib3 = fib1 + fib2
+            resultado = 'f'{fib3}
+            fib1 = fib2
+            fib2 = fib3
+        return resultado
+
+    def exercicioQuatorze(self, num):
+    fib1 = 0
+    fib2 = 1
+    fib3 = 0
+    resultado = f'0\n1\n'
+    for fib3 in range(1, 100, 1):
+        fib3 = fib1 + fib2
+        resultado = 'f'{fib3}
+        fib1 = fib2
+        fib2 = fib3
+        if num == fib3:
+            return f'{num} esta dentro da sequencia de fibonacci'
+        return f'{num} nao esta dentro da sequencia de fibonacci'
+
+    def exercicioQuinze(self, num):
+        resto = 0
+        num % 10
+        while num / 10 != 0:
+            resto +- num % 10
+            num = int (num / 10)
+        return resto
 
 
-
-
-
+        
